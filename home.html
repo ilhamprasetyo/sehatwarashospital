@@ -7,6 +7,7 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
@@ -24,238 +25,396 @@
   <!-- Navbar -->
   <section id="navbar">
     <div class="fixed-top">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="col my-auto text-nowrap">
-          <span><strong>Sehat Waras Hospital</strong></span>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-md-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="home.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+        <div class="container-fluid">
+          <div class="my-auto text-nowrap mr-3">
+            <span class="website-title text-center"><strong><h3>Sehat Waras</h3><h5>Hospital</h5></strong></span>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="dokter_umum.html">Dokter & Staf</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-warning" href="image1.jpg" download><b>Brosur</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="https://covid19.go.id/vaksin-covid19" target="_blank"><b>Vaksin Covid-19</b></a>
+              </li>
+            </ul>
+            <form class="form-search form-inline input-group">
+              <input class="form-control" type="text" placeholder="Search">
+              <div class="input-group-append">
+                <button class="btn btn-secondary my-2s" type="button"><i class="bi bi-search"></i></button>
+              </div>
+            </form>
+          </div>
         </div>
       </nav>
     </div>
   </section>
 
-  <!-- Header -->
-  <section id="header">
-    <div class="container-fluid">
-      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="" data-slide-to="0" class="active"></li>
-          <li data-target="" data-slide-to="1"></li>
-          <li data-target="" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="image-slider">
-            </div>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="image-slider">
-            </div>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="image-slider">
-            </div>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
+  <!-- <div class="my-3 text-nowrap">
+  <span class="text-success text-decoration-none"><strong><h5>Selalu<br>Membantu<br>Masyarakat</h5></strong></span>
+</div> -->
+
+<!-- Header -->
+<section id="header">
+  <div class="container-fluid">
+    <div id="firstBanner" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#firstBanner" data-slide-to="0" class="active"></li>
+        <li data-target="#firstBanner" data-slide-to="1"></li>
+        <li data-target="#firstBanner" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="image-slider">
+            <img src="image1.jpg" alt="">
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </a>
+        <div class="carousel-item">
+          <div class="image-slider">
+            <img src="image2.jpg" alt="">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="image-slider">
+            <img src="image3.jpg" alt="">
+          </div>
+        </div>
       </div>
-      <div class="jumbotron">
-        <h1 class="display-4">Sehat Waras Hospital</h1>
-        <p class="lead"></p>
-        <hr class="my-4"></hr>
+      <a class="carousel-control-prev" href="#firstBanner" role="button" data-slide="prev">
+        <i class="control-button bi bi-arrow-left-square-fill"></i>
+      </a>
+      <a class="carousel-control-next" href="#firstBanner" role="button" data-slide="next">
+        <i class="control-button bi bi-arrow-right-square-fill"></i>
+      </a>
+    </div>
+    <div class="jumbotron">
+      <h1 class="display-4"><b>Sehat Waras Hospital</b></h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </div>
+</section>
+
+<section class="bg-danger" id="important">
+  <div class="container-fluid">
+    <div class="title text-center">
+      <h3><strong>Pemeriksaan </strong><u class="text-white">COVID-19</u></h3>
+      <hr class="title-hr"></hr>
+      <p>Berikut ini adalah jenis-jenis pemeriksaan Covid-19 yang dapat Anda lakukan di Sehat Waras Hospital:</p>
+    </div>
+    <div class="important-content text-center">
+      <div class="row mb-5">
+        <div class="col-lg-2 col-md-4">
+          <i class="icon bi bi-shield-check"></i>
+          <h5>Vaksin 1</h5>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <i class="icon bi bi-shield-minus"></i>
+          <h5>Vaksin 2</h5>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <i class="icon bi bi-shield-plus"></i>
+          <h5>Vaksin 3</h5>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <i class="icon bi bi-shield-shaded"></i>
+          <h5>Vaksin 4</h5>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <i class="icon bi bi-shield-slash"></i>
+          <h5>Vaksin 5</h5>
+        </div>
+        <div class="col-lg-2 col-md-4">
+          <i class="icon bi bi-shield-x"></i>
+          <h5>Vaksin 6</h5>
+        </div>
+      </div>
+      <button class="btn btn-warning" type="button" name="button">Lakukan pendaftaran pemeriksaan COVID-19 disini</button>
+    </div>
+  </div>
+</section>
+
+<section id="promosi">
+  <div class="container">
+    <div class="title text-center">
+      <h3><strong>Promo</strong> dan <strong>Diskon</strong> </h3>
+      <hr class="title-hr"></hr>
+    </div>
+    <div id="secondBanner" class="carousel slide carousel-fade" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#secondBanner" data-slide-to="0" class="active"></li>
+        <li data-target="#secondBanner" data-slide-to="1"></li>
+        <li data-target="#secondBanner" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="image-promo" src="image1.jpg">
+        </div>
+        <div class="carousel-item">
+          <img class="image-promo" src="image2.jpg">
+        </div>
+        <div class="carousel-item">
+          <img class="image-promo" src="image3.jpg">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#secondBanner" role="button" data-slide="prev">
+        <i class="control-button bi bi-arrow-left-square-fill"></i>
+      </a>
+      <a class="carousel-control-next" href="#secondBanner" role="button" data-slide="next">
+        <i class="control-button bi bi-arrow-right-square-fill"></i>
+      </a>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="procedure">
+  <div class="container-fluid">
+    <div class="title text-center">
+      <h3><strong>Prosedur</strong> Membuat Jadwal Periksa</h3>
+      <hr class="title-hr"></hr>
+    </div>
+    <div class="row text-center">
+      <div class="col-lg-3 col-md-6 col-sm-6 m-auto col-content">
+        <label>1. Login di Website</label>
+        <div class="image-procedure">
+          <i class="icon bi bi-person-fill"></i>
+        </div>
+      </div>
+      <div class="col col-content">
+        <label>2. Buat Jadwal Periksa</label>
+        <div class="image-procedure">
+          <i class="icon bi bi-calendar-date-fill"></i>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 m-auto col-content">
+        <label>3. Tunggu Konfirmasi</label>
+        <div class="image-procedure">
+          <i class="icon bi bi-check-square-fill"></i>
+        </div>
+      </div>
+      <div class="col col-content">
+        <label>4. Datang ke Rumah Sakit</label>
+        <div class="image-procedure">
+          <i class="icon bi bi-building"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="keunggulan">
+  <div class="title text-center">
+    <h3><strong>Keunggulan</strong> Rumah Sakit Sehat Waras</h3>
+    <hr class="title-hr"></hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 col-sm-12 m-auto col-content">
+        <div class="keunggulan-image">
+          <i class="icon bi bi-bag-plus-fill"></i>
+        </div>
+        <h3>Keunggulan 1</h3>
+        <hr></hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="col col-content">
+        <div class="keunggulan-image">
+          <i class="icon bi bi-bullseye"></i>
+        </div>
+        <h3>Keunggulan 2</h3>
+        <hr></hr>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
     </div>
-  </section>
-
-  <section id="procedure">
-    <div class="container-fluid">
-      <div class="title text-center">
-        <h3><strong>Prosedur</strong> Membuat Jadwal Periksa</h3>
-        <hr class="title-hr"></hr>
+    <div class="row">
+      <div class="col-12 col-md-6 col-sm-12 m-auto col-content">
+        <div class="keunggulan-image">
+          <i class="icon bi bi-building"></i>
+        </div>
+        <h3>Keunggulan 3</h3>
+        <hr></hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
-      <div class="row text-center">
-        <div class="col-lg-3 col-md-6 col-sm-6 m-auto col-content">
-          <label>1. Login di Website</label>
-          <div class="image-procedure"></div>
+      <div class="col col-content">
+        <div class="keunggulan-image">
+          <i class="icon bi bi-cash"></i>
         </div>
-        <div class="col col-content">
-          <label>2. Buat Jadwal Periksa</label>
-          <div class="image-procedure"></div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-6 m-auto col-content">
-          <label>3. Tunggu Konfirmasi</label>
-          <div class="image-procedure"></div>
-        </div>
-        <div class="col col-content">
-          <label>4. Datang ke Rumah Sakit</label>
-          <div class="image-procedure"></div>
-        </div>
+        <h3>Keunggulan 4</h3>
+        <hr></hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
     </div>
-  </section>
+    <div class="row">
+      <div class="col-12 col-md-6 col-sm-12 m-auto col-content">
+        <div class="keunggulan-image">
+          <i class="icon bi bi-droplet-fill"></i>
+        </div>
+        <h3>Keunggulan 5</h3>
+        <hr></hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      <div class="col col-content">
+        <div class="keunggulan-image">
+          <i class="icon bi bi-receipt"></i>
+        </div>
+        <h3>Keunggulan 6</h3>
+        <hr></hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <section id="keunggulan">
+<section id="pelayanan">
+  <div class="title text-center">
+    <h3><strong>Pelayanan</strong> Kami</h3>
+    <hr class="title-hr"></hr>
+  </div>
+  <div class="container">
+    <div class="row col-content">
+      <div class="col-md-6 col-sm-12 m-auto">
+        <div class="pelayanan-image">
+          <i class="icon bi bi-star-fill"></i>
+        </div>
+      </div>
+      <div class="col">
+        <h3>Pelayanan Ibu dan Anak</h3>
+        <hr></hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="row col-content">
+      <div class="col-md-6 col-sm-12 m-auto">
+        <div class="pelayanan-image">
+          <i class="icon bi bi-star-fill"></i>
+        </div>
+      </div>
+      <div class="col">
+        <h3>Pelayanan Melahirkan</h3>
+        <hr></hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="row col-content">
+      <div class="col-md-6 col-sm-12 m-auto">
+        <div class="pelayanan-image">
+          <i class="icon bi bi-star-fill"></i>
+        </div>
+      </div>
+      <div class="col">
+        <h3>Pelayanan UGD dan IGD</h3>
+        <hr></hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="row col-content">
+      <div class="col-md-6 col-sm-12 m-auto">
+        <div class="pelayanan-image">
+          <i class="icon bi bi-star-fill"></i>
+        </div>
+      </div>
+      <div class="col">
+        <h3>Pelayanan Vaksin</h3>
+        <hr></hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="row col-content">
+      <div class="col-md-6 col-sm-12 m-auto">
+        <div class="pelayanan-image">
+          <i class="icon bi bi-star-fill"></i>
+        </div>
+      </div>
+      <div class="col">
+        <h3>Pelayanan Imunisasi</h3>
+        <hr></hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="artikel">
+  <div class="container">
     <div class="title text-center">
-      <h3><strong>Keunggulan</strong> Rumah Sakit Sehat Waras</h3>
+      <h3><strong>Artikel</strong> Terbaru</h3>
       <hr class="title-hr"></hr>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6 col-sm-12 m-auto col-content">
-          <div class="keunggulan-image"></div>
-          <h3>Keunggulan 1</h3>
-          <hr></hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="col col-content">
-          <div class="keunggulan-image"></div>
-          <h3>Keunggulan 2</h3>
-          <hr></hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-md-6 col-sm-12 m-auto col-content">
-          <div class="keunggulan-image"></div>
-          <h3>Keunggulan 3</h3>
-          <hr></hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="col col-content">
-          <div class="keunggulan-image"></div>
-          <h3>Keunggulan 4</h3>
-          <hr></hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-md-6 col-sm-12 m-auto col-content">
-          <div class="keunggulan-image"></div>
-          <h3>Keunggulan 5</h3>
-          <hr></hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="col col-content">
-          <div class="keunggulan-image"></div>
-          <h3>Keunggulan 6</h3>
-          <hr></hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-      </div>
+    <div class="d-flex justify-content-center">
+      <iframe src="https://id.wikipedia.org/wiki/Indonesia" width="800px" height="400px"></iframe>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="pelayanan">
+<section id="berita">
+  <div class="container">
     <div class="title text-center">
-      <h3><strong>Pelayanan</strong> Kami</h3>
+      <h3><strong>Berita</strong> Terbaru</h3>
       <hr class="title-hr"></hr>
     </div>
-    <div class="container">
-      <div class="row col-content">
-        <div class="col-md-6 col-sm-12 m-auto">
-          <div class="pelayanan-image"></div>
-        </div>
-        <div class="col">
-          <h3>Pelayanan Ibu dan Anak</h3>
-          <hr></hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-      </div>
-      <div class="row col-content">
-        <div class="col-md-6 col-sm-12 m-auto">
-          <div class="pelayanan-image"></div>
-        </div>
-        <div class="col">
-          <h3>Pelayanan Melahirkan</h3>
-          <hr></hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-      </div>
-      <div class="row col-content">
-        <div class="col-md-6 col-sm-12 m-auto">
-          <div class="pelayanan-image"></div>
-        </div>
-        <div class="col">
-          <h3>Pelayanan UGD dan IGD</h3>
-          <hr></hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-      </div>
-      <div class="row col-content">
-        <div class="col-md-6 col-sm-12 m-auto">
-          <div class="pelayanan-image"></div>
-        </div>
-        <div class="col">
-          <h3>Pelayanan Vaksin</h3>
-          <hr></hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-      </div>
-      <div class="row col-content">
-        <div class="col-md-6 col-sm-12 m-auto">
-          <div class="pelayanan-image"></div>
-        </div>
-        <div class="col">
-          <h3>Pelayanan Imunisasi</h3>
-          <hr></hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-      </div>
+    <div class="d-flex justify-content-center">
+      <iframe src="https://id.wikipedia.org/wiki/Pandemi_COVID-19" width="800px" height="400px"></iframe>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="footer">
-    <div class="">
-      <div class="bg-light">
-        <div class="title text-center p-3">
-          <h1 class="display-4">Sehat Waras</h1>
-          <h1>Hospital</h1>
-          <hr class="title-hr"></hr>
-        </div>
-        <div class="p-3 my-auto text-center">
-          Copyright Ilham Prasetyo
-        </div>
-      </div>
+<section id="footer">
+  <div class="bg-dark text-white">
+    <div class="title text-center p-3">
+      <h1 class="display-4">Sehat Waras</h1>
+      <h1>Hospital</h1>
+      <hr class="title-hr"></hr>
     </div>
+    <div class="social-media">
+      <p>Ikuti kami</p>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a class="text-white" href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a class="text-white" href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a class="text-white" href="https://www.linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a class="text-white" href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a class="text-white" href="https://wa.me/6281212345678" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a class="text-white" href="https://www.youtube.com" target="_blank"><i class="bi bi-youtube"></i></a>
+        </li>
+      </ul>
+    </div>
+    <div class="p-3 my-auto text-center">
+      <p>&copy; Ilham Prasetyo 2021</p>
+    </div>
+  </div>
 
 
-  </section>
+</section>
 
-  <!-- Bootstrap JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<!-- Bootstrap JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
 </body>
 </html>

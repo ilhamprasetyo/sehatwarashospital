@@ -3,6 +3,10 @@ body {
   font-weight: normal;
 }
 
+section {
+  margin: 50px auto;
+}
+
 thead {
   background-color: #5f939a;
   color: #ffffff;
@@ -19,25 +23,39 @@ textarea {
 }
 
 #navbar {
-  margin-bottom: 50px;
+  margin-bottom: 120px
 }
 
 #header {
+  margin-bottom: 50px;
+}
+
+#important {
+  padding: 50px;
+  color: white;
+}
+
+#berita {
+}
+
+#footer {
+  margin: 100px 0 0 0;
+}
+
+#navbar a {
+  font-size: 15px;
+}
+
+#contact {
   margin-bottom: 100px;
 }
 
-#procedure {
+.form-search {
   width: auto;
-  margin: auto;
-  margin-bottom: 100px;
 }
 
-#keunggulan {
-  margin-bottom: 100px;
-}
-
-#about, #contact {
-  margin: 100px auto;
+.website-title {
+  color: #5f939a;
 }
 
 .title-hr {
@@ -48,21 +66,44 @@ textarea {
 }
 
 .title {
-  margin: 50px auto;
+  margin-bottom: 50px;
 }
 
 .header {
   margin: 100px 0;
 }
 
+.control-button {
+  font-size: 30px;
+  color: black;
+}
+
 .jumbotron {
-  margin-bottom: 50px;
+  padding: 20px;
 }
 
 .image-slider {
   width: 100%;
+  height: 500px;
+  display: block;
+  margin: auto;
+}
+
+.image-slider img {
+  width: 100%;
+  width: inherit;
+  object-fit: contain;
+}
+
+.promo-image-slider {
+  width: 400px;
+}
+
+.image-promo {
+  width: auto;
   height: 400px;
-  background-color: #5f939a;
+  display: block;
+  margin: auto;
 }
 
 .image-procedure {
@@ -70,6 +111,12 @@ textarea {
   height: 200px;
   margin: auto;
   background-color: #5f939a;
+  border-radius: 20px;
+}
+
+.icon {
+  font-size: 130px;
+  color: white;
 }
 
 .keunggulan-image {
@@ -81,6 +128,10 @@ textarea {
   margin-bottom: 50px;
 }
 
+.keunggulan-image .icon, .pelayanan-image .icon {
+  margin-left: 35px;
+}
+
 .pelayanan-image {
   width: 200px;
   height: 200px;
@@ -90,26 +141,51 @@ textarea {
   margin-bottom: 50px;
 }
 
-.about-image {
-  width: auto;
-  margin: auto auto 30px auto;
-  height: 300px;
-  background-color: #5f939a;
+.social-media {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-.big-image-about {
+.social-media i{
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  margin: auto auto 30px auto;
+  width: auto;
+  height: 300px;
+}
+
+.about-image img{
+  height: inherit;
+}
+
+.about-big-image
+ {
+  display: flex;
+  justify-content: center;
+  margin: auto auto 30px auto;
   width: auto;
   height: 400px;
-  margin: auto;
-  background-color: #5f939a;
+}
+
+.about-big-image img{
+  height: inherit;
 }
 
 .about-small-image {
-  width: 300px;
+  display: flex;
+  justify-content: center;
+  margin: auto auto 30px auto;
+  width: auto;
   height: 200px;
-  margin: auto;
-  background-color: #5f939a;
-  margin-bottom: 50px;
+}
+
+.about-small-image img {
+  height: inherit;
 }
 
 .locations {
@@ -120,16 +196,22 @@ textarea {
   margin-bottom: 50px;
 }
 
-.col-content {
-  padding: 20px;
-}
-
 .place {
   padding: 20px;
 }
 
 .about-video {
   margin: 100px auto;
+  width: 600px
+}
+
+.foto-dokter {
+  font-size: 100px;
+  color: #5f939a;
+}
+
+.nav-dokter {
+  margin: 10px;
 }
 
 @media (max-width: 600px) {
@@ -151,30 +233,52 @@ textarea {
     font-weight: bold;
   }
 
-}
+  .nav-dokter {
+    width: 100%
+  }
 
-@media (max-width: 768px) {
-  .big-image-about {
+  .locations {
+    margin: 0;
+  }
+
+  .about-image, .about-big-image {
+    width: auto;
     height: 300px;
   }
 
-  .about-image {
+  .row-content {
+    margin: 0;
+  }
+
+  .col-content {
+    padding: 30px;
+  }
+
+  .about-small-image {
+    margin: auto auto 20px auto;
     width: auto;
+    height: 300px;
+  }
+
+  .about-small-image img{
+
+  }
+
+  .social-media i{
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
   }
 }
 
 @media (max-width: 400px) {
-  .about-image {
-    height: 200px;
+  .about-image, .about-big-image, .about-small-image {
     width: auto;
+    height: 200px;
   }
 
-  .big-image-about {
-    height: 200px;
-    width: auto;
+  .col-content {
+    padding: 30px 0 30px 0;
   }
 
-  .about-small-image {
-    width: auto;
-  }
 }
