@@ -4,7 +4,7 @@ body {
 }
 
 section {
-  margin: 50px auto;
+  margin: 100px auto;
 }
 
 thead {
@@ -66,11 +66,15 @@ textarea {
 }
 
 .title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
-.header {
-  margin: 100px 0;
+.carousel-1 {
+  width: 900px;
+}
+
+.carousel-2 {
+  width: 600px;
 }
 
 .control-button {
@@ -78,67 +82,57 @@ textarea {
   color: black;
 }
 
-.jumbotron {
+.procedure-content {
   padding: 20px;
 }
 
-.image-slider {
-  width: 100%;
-  height: 500px;
-  display: block;
+.procedure-icon {
+  display: flex;
+  justify-content: center;
   margin: auto;
-}
-
-.image-slider img {
-  width: 100%;
-  width: inherit;
-  object-fit: contain;
-}
-
-.promo-image-slider {
-  width: 400px;
-}
-
-.image-promo {
-  width: auto;
-  height: 400px;
-  display: block;
-  margin: auto;
-}
-
-.image-procedure {
   width: 200px;
   height: 200px;
-  margin: auto;
   background-color: #5f939a;
   border-radius: 20px;
 }
 
 .icon {
-  font-size: 130px;
+  font-size: 100px;
   color: white;
+  margin: auto;
 }
 
-.keunggulan-image {
+.keunggulan-content {
+  padding: 20px;
+}
+
+.keunggulan-icon {
+  display: flex;
+  justify-content: center;
   width: 200px;
   height: 200px;
   margin: auto;
   border-radius: 100%;
   background-color: #5f939a;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
-.keunggulan-image .icon, .pelayanan-image .icon {
-  margin-left: 35px;
+.keunggulan-text {
 }
 
-.pelayanan-image {
+.pelayanan-icon {
+  display: flex;
+  justify-content: center;
   width: 200px;
   height: 200px;
   margin: auto;
   border-radius: 10px;
   background-color: #5f939a;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+.pelayanan-text {
+  padding: 0 20px;
 }
 
 .social-media {
@@ -230,6 +224,26 @@ width: 100%;
 height: 100%;
 }
 
+.artikel-content {
+  width: 600px;
+  height: 400px;
+  padding: 30px;  
+  overflow-y: scroll;
+}
+
+.berita-image {
+  background-image:
+      linear-gradient(to bottom, rgba(255, 255, 252, 0.8), rgba(95, 147, 154, 0.9)),
+      url('image1.jpg');
+  background-size: cover;
+}
+
+@media (max-width: 800px) {
+  .carousel-1 {
+    width: auto;
+  }
+}
+
 @media (max-width: 768px) {
   .about-video {
     width: auto;
@@ -243,16 +257,8 @@ height: 100%;
     font-weight: bold;
   }
 
-  .image-slider {
-    width: 100%;
-    height: 200px;
-    background-color: #5f939a;
-  }
-
-  .display-4 {
-    font-size: 30px;
-    text-align: center;
-    font-weight: bold;
+  .carousel-2 {
+    width: auto;
   }
 
   .nav-dokter {
@@ -284,9 +290,20 @@ height: 100%;
     padding: 10px;
     font-size: 20px;
   }
+
+  .artikel-content {
+    width: auto;
+    height: 400px;
+    padding: 30px;
+    overflow-y: scroll;
+  }
 }
 
 @media (max-width: 400px) {
+  #promotion {
+    width: auto;
+  }
+
   .about-image, .about-big-image, .about-small-image {
     width: auto;
     height: 200px;
