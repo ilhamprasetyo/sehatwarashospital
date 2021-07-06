@@ -30,11 +30,6 @@ textarea {
   margin-bottom: 50px;
 }
 
-#important {
-  padding: 50px;
-  color: white;
-}
-
 #berita {
 }
 
@@ -43,7 +38,7 @@ textarea {
 }
 
 #navbar a {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 #contact {
@@ -80,6 +75,11 @@ textarea {
 .control-button {
   font-size: 30px;
   color: black;
+}
+
+.formulir-pendaftaran {
+  margin: auto;
+  width: 600px;
 }
 
 .procedure-content {
@@ -262,6 +262,10 @@ height: 100%;
 
   .carousel-2 {
     width: auto;
+  }
+
+  .formulir-pendaftaran {
+    width: 100%;
   }
 
   .nav-dokter {

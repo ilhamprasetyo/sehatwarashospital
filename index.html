@@ -53,13 +53,20 @@
               <li class="nav-item">
                 <a class="nav-link text-danger" href="https://covid19.go.id/vaksin-covid19" target="_blank"><b>Vaksin Covid-19</b></a>
               </li>
+              <li class="nav-item">
+              </li>
             </ul>
-            <form class="form-search form-inline input-group">
-              <input class="form-control" type="text" placeholder="Search">
-              <div class="input-group-append">
-                <button class="btn btn-secondary my-2s" type="button"><i class="bi bi-search"></i></button>
-              </div>
-            </form>
+            <div class="search-bar">
+              <form class="form-search form-inline input-group">
+                <input class="form-control" type="text" placeholder="Search">
+                <div class="input-group-append">
+                  <button class="btn btn-secondary my-2s" type="button"><i class="bi bi-search"></i></button>
+                </div>
+              </form>
+            </div>
+            <div class="text-center pl-1">
+              <button class="btn btn-secondary" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-person-circle"></i></button>
+            </div>
           </div>
         </div>
       </nav>
@@ -104,10 +111,10 @@
 
   <section class="bg-danger" id="important">
     <div class="container-fluid">
-      <div class="title text-center">
-        <h3><strong>Pemeriksaan </strong><u class="text-white">COVID-19</u></h3>
+      <div class="title text-center text-white pt-5">
+        <h3><strong>Pemeriksaan </strong><u>COVID-19</u></h3>
         <hr class="title-hr"></hr>
-        <p>Berikut ini adalah jenis-jenis pemeriksaan Covid-19 yang dapat Anda lakukan di Sehat Waras Hospital :</p>
+        <p>Berikut ini adalah jenis-jenis pemeriksaan Covid-19 yang dapat Anda lakukan di Sehat Waras Hospital</p>
       </div>
       <div class="important-content text-center">
         <div class="row mb-5">
@@ -136,7 +143,53 @@
             <h5>Vaksin 6</h5>
           </div>
         </div>
-        <button class="btn btn-warning" type="button" name="button">Lakukan pendaftaran pemeriksaan COVID-19 disini</button>
+      </div>
+      <div class="text-center">
+        <p><button class="btn btn-warning text-white" type="button" name="button" data-toggle="collapse" data-target="#pendaftaran" aria-expanded="false" aria-controls="collapseExample">Lakukan pendaftaran pemeriksaan COVID-19 disini</button></p>
+      </div>
+      <div class="formulir-pendaftaran pb-5">
+        <div class="collapse" id="pendaftaran">
+          <div class="card card-body">
+            <form action="index.html">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>Nama :</label>
+                    <input type="text" class="form-control" required>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label>Tanggal Lahir :</label>
+                    <input type="date" class="form-control" required>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>Jenis Kelamin :</label>
+                    <select class="form-control" required>
+                      <option value="">Laki-laki</option>
+                      <option value="">Perempuan</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label>Email :</label>
+                    <input type="email" class="form-control" required>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Alamat :</label>
+                <textarea name="name" class="form-control" rows="3" cols="30" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Daftar</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -449,7 +502,7 @@
           Ut sem viverra aliquet eget sit. Sit amet volutpat consequat mauris. Lectus nulla at volutpat diam ut venenatis. Velit ut tortor pretium viverra suspendisse potenti. Cursus eget nunc scelerisque viverra mauris in aliquam sem. A iaculis at erat pellentesque adipiscing commodo elit at. Interdum varius sit amet mattis vulputate enim nulla aliquet. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Quis vel eros donec ac. Praesent elementum facilisis leo vel fringilla.
         </p>
         <p>
-        Pellentesque elit eget gravida cum sociis natoque penatibus et magnis. Egestas pretium aenean pharetra magna ac. Sit amet nulla facilisi morbi tempus iaculis urna id volutpat. Viverra adipiscing at in tellus. Tellus id interdum velit laoreet. Facilisi cras fermentum odio eu feugiat pretium nibh. Amet commodo nulla facilisi nullam vehicula. Porta lorem mollis aliquam ut porttitor leo. Quam viverra orci sagittis eu volutpat odio facilisis mauris sit. Aenean euismod elementum nisi quis eleifend. Viverra accumsan in nisl nisi. Non consectetur a erat nam at lectus urna. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat. Leo urna molestie at elementum eu facilisis sed odio. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Lectus nulla at volutpat diam ut venenatis.
+          Pellentesque elit eget gravida cum sociis natoque penatibus et magnis. Egestas pretium aenean pharetra magna ac. Sit amet nulla facilisi morbi tempus iaculis urna id volutpat. Viverra adipiscing at in tellus. Tellus id interdum velit laoreet. Facilisi cras fermentum odio eu feugiat pretium nibh. Amet commodo nulla facilisi nullam vehicula. Porta lorem mollis aliquam ut porttitor leo. Quam viverra orci sagittis eu volutpat odio facilisis mauris sit. Aenean euismod elementum nisi quis eleifend. Viverra accumsan in nisl nisi. Non consectetur a erat nam at lectus urna. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat. Leo urna molestie at elementum eu facilisis sed odio. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Lectus nulla at volutpat diam ut venenatis.
         </p>
       </div>
     </div>
@@ -514,8 +567,14 @@
 
 <section id="modal">
   <div class="modal fade" id="welcome_message" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Informasi</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="bi bi-x-lg"></i>
+          </button>
+        </div>
         <div class="modal-body">
           <div id="modalCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -530,10 +589,12 @@
               </div>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#modalCarousel" role="button" data-slide="prev">
+        </div>
+        <div class="d-flex justify-content-center">
+          <a href="#modalCarousel" role="button" data-slide="prev">
             <i class="control-button bi bi-arrow-left-square-fill"></i>
           </a>
-          <a class="carousel-control-next" href="#modalCarousel" role="button" data-slide="next">
+          <a href="#modalCarousel" role="button" data-slide="next">
             <i class="control-button bi bi-arrow-right-square-fill"></i>
           </a>
         </div>
@@ -544,12 +605,17 @@
   <div class="modal fade" id="beritaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Berita Terkini</h5>
+          <div class="sticky-top">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+        </div>
         <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
           <div class="berita-title mb-3">
-            <h1 class="display-4">Berita</h1>
+            <h1 class="display-4">Masyarakat Langgar Prokes</h1>
             <h5>Berita terkini mengenai <b>Covid-19</b></h5>
             <p>6 Juli 2021 oleh Ilham Prasetyo</p>
           </div>
@@ -618,7 +684,7 @@
 <!-- Bootstrap JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 <script type="text/javascript">
-$(document).ready(function() {  
+$(document).ready(function() {
   $('#welcome_message').modal('show');
 });
 </script>
