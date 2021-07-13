@@ -23,7 +23,7 @@ textarea {
 }
 
 #navbar {
-  margin-bottom: 120px
+  transition: top 0.5s;
 }
 
 #header {
@@ -43,6 +43,10 @@ textarea {
 
 #contact {
   margin-bottom: 100px;
+}
+
+.logo {
+  width: 70px;
 }
 
 .form-search {
@@ -133,6 +137,7 @@ textarea {
 
 .pelayanan-text {
   padding: 0 20px;
+  margin: auto;
 }
 
 .modal-image {
@@ -140,7 +145,6 @@ textarea {
 
 .social-media {
   text-align: center;
-  margin-bottom: 10px;
 }
 
 .social-media i{
@@ -239,6 +243,10 @@ height: 100%;
       linear-gradient(to bottom, rgba(255, 255, 252, 0.8), rgba(95, 147, 154, 0.9)),
       url('image1.jpg');
   background-size: cover;
+}
+
+.footer-logo img{
+  width: 150px;
 }
 
 @media (max-width: 900px) {

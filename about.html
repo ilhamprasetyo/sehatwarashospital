@@ -20,18 +20,18 @@
   <title>Rumah Sakit Sehat Waras</title>
 </head>
 <body>
-  <section id="navbar">
-    <div class="fixed-top">
+  <section>
+    <div class="fixed-top" id="navbar">
       <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
         <div class="container-fluid">
-          <div class="my-auto text-nowrap mr-3">
-            <span class="website-title text-center"><strong><h3>Sehat Waras</h3><h5>Hospital</h5></strong></span>
+          <div class="logo mr-3">
+            <img class="d-block w-100" src="logo.jpg">
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav m-auto">
+            <ul class="navbar-nav mr-auto">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
@@ -48,7 +48,7 @@
                 <a class="nav-link text-warning" href="image1.jpg" download><b>Brosur</b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-danger" href="https://covid19.go.id/vaksin-covid19" target="_blank"><b>Vaksin Covid-19</b></a>
+                <a class="nav-link text-danger" href="https://covid19.go.id/vaksin-covid19" target="_blank" rel="noreferrer"><b>Vaksin Covid-19</b></a>
               </li>
               <li class="nav-item">
               </li>
@@ -211,9 +211,30 @@
 
   </section>
 
-  <!-- Bootstrap JavaScript -->
+  <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script type="text/javascript">
+
+  AOS.init();
+
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-150px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+
+  </script>
 </body>
 </html>
