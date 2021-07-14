@@ -26,11 +26,6 @@ textarea {
   transition: top 0.5s;
 }
 
-#header {
-  padding-top: 20px;
-  margin-bottom: 50px;
-}
-
 #berita {
 }
 
@@ -157,45 +152,43 @@ textarea {
   display: flex;
   justify-content: center;
   margin: auto auto 30px auto;
-  width: auto;
-  height: 300px;
+  width: 300px;
 }
 
 .about-image img{
-  height: inherit;
+  width: 100%;
 }
 
-.about-big-image
- {
+.about-big-image {
   display: flex;
   justify-content: center;
   margin: auto auto 30px auto;
-  width: auto;
-  height: 400px;
+  width: 600px;
 }
 
-.about-big-image img{
-  height: inherit;
+.about-big-image img {
+  width: 100%;
+}
+
+.row-content {
+}
+
+.col-content {
+  padding: 50px;
 }
 
 .about-small-image {
   display: flex;
   justify-content: center;
-  margin: auto auto 30px auto;
-  width: auto;
-  height: 200px;
+  margin-bottom: 10px;
 }
 
 .about-small-image img {
-  height: inherit;
+  width: 100%;
 }
 
-.locations {
+.cabang {
   margin: 50px auto;
-}
-
-.row-content {
-  margin-bottom: 50px;
 }
 
 .place {
@@ -225,12 +218,12 @@ textarea {
 }
 
 .gmap_canvas iframe {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .artikel-content {
@@ -242,8 +235,8 @@ border: 0;
 
 .berita-image {
   background-image:
-      linear-gradient(to bottom, rgba(255, 255, 252, 0.8), rgba(95, 147, 154, 0.9)),
-      url('image1.jpg');
+  linear-gradient(to bottom, rgba(255, 255, 252, 0.8), rgba(95, 147, 154, 0.9)),
+  url('image1.jpg');
   background-size: cover;
 }
 
@@ -282,20 +275,16 @@ border: 0;
     width: 100%
   }
 
-  .locations {
-    margin: 0;
-  }
-
-  .about-image, .about-big-image {
-    height: 200px;
-  }
-
   .row-content {
     margin: 0;
   }
 
   .col-content {
-    padding: 30px;
+    padding: 0 0 30px 0;
+  }
+
+  .about-big-image {
+    width: 100%;
   }
 
   .about-small-image {
@@ -319,14 +308,5 @@ border: 0;
 @media (max-width: 400px) {
   #promotion {
     width: auto;
-  }
-
-  .about-image, .about-big-image, .about-small-image {
-    width: auto;
-    height: 200px;
-  }
-
-  .col-content {
-    padding: 30px 0 30px 0;
   }
 }
